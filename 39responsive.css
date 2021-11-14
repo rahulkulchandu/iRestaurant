@@ -1,0 +1,215 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+  html{
+    scroll-behavior: smooth;
+}
+/* NAVBAR */
+#navbar{
+    font-family: 'Baloo Bhai 2', cursive;
+    display: flex;
+    align-items: center;
+    position:sticky;
+    top: 0px;
+    z-index: 2;
+
+}
+#navbar::before{
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height:100%;
+    background-color: black;
+    opacity: 0.7;
+    z-index: -1;
+
+}
+#logo{
+    padding: 8px 49px;
+    margin: 3px 19px;
+}
+#logo img{
+    width: 3.2rem;
+    border-radius: 26px;
+}
+ #navbar ul{
+    display: flex;
+    padding: 1px 4px;
+}
+#navbar ul li{
+    list-style-type: none;
+    font-size: 1.2rem;
+}
+#navbar ul li a{
+    font-family: 'Baloo Bhai 2', cursive;
+    color: white; 
+    display: block;
+    text-decoration: none;
+    padding: 3px 24px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+/* HOME */
+#home{
+    font-family: 'Bree Serif', serif;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3px 34px;
+    height: 524px;
+    
+}
+#home::before{
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background: url('39images/39home.jpeg') no-repeat center center/cover;
+    width: 100%;
+    height:100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+#home h1{
+    color: white;
+    text-align: center;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.6rem;
+}
+.btn{
+    padding: 4px 12px;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color:#b1a6a6;
+    font-size: 1.5rem;
+    margin: 6px 3px;
+    cursor: pointer;
+    outline: none;
+    margin-top: 55px;
+}
+.btn:hover{
+    background-color: black;
+    color: white;
+    box-shadow: red 1px 1px 16px 4px
+
+}
+/* utility class */
+.h-primary{
+    font-family: 'Bree Serif', serif;
+    font-size: 3.9rem;
+    padding: 13px;
+}
+.center{
+    text-align: center;
+}
+.h-secondary{
+    font-family: 'Bree Serif', serif;
+    font-size: 1.9rem;
+    padding: 13px;
+}
+/* services */
+#services{
+    margin: 35px;
+    display: flex;
+    /* justify-content: center; */
+}
+#services .box{
+    border: 2px solid red;
+    border-radius: 50px;
+    background-color:#d2d0958f;
+    padding: 30px;
+    margin: 3px 15px;
+    margin-bottom: 34px;
+
+}
+#services .box img{
+ height: 160px;
+ display: block;
+ margin: auto;
+}
+
+/* CLIENT */
+#client-container{
+    /* height: 400px; */
+    position: relative;
+}
+#client-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#client-box img{
+    height: 130px;
+   
+}
+.client-item{
+    padding: 30px;    
+}
+#client-container::before{
+    content: "";
+    position: absolute;
+    
+    background: url('39images/39clientbackground.jpeg') no-repeat center center/cover;
+    width: 100%;
+    height:100%;
+    opacity: 0.6;
+    z-index: -1;
+}
+
+/* CONTACT */
+#contact-container{
+   /* height: 650px; */
+   position: relative;
+}
+#contact-box{
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-container::before{
+    content: "";
+    position: absolute;
+    background: url('39images/39aboutbackground.jpeg') no-repeat center center/cover;
+    width: 100%;
+    height:100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+#contact-box form{
+    width: 40%;
+}
+
+
+/* FOOTER */
+#footer-box{
+    padding: 12px 2px;
+    background-color: black;
+    color: white;
+}
+#contact-box textarea, #contact-box input{
+    width: 100%;
+    padding: 0.5rem;
+    border: 2px solid black;
+    border-radius: 23px;
+    outline: none;
+   
+}
+#contact-box label{
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
